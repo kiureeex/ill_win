@@ -37,7 +37,9 @@
   "name":"RPG Ill Win",
   "resources":[
     {"id":{"name":"README","path":"notes/README/README.yy",},},
+    {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_wood","path":"objects/obj_wood/obj_wood.yy",},},
     {"id":{"name":"rm_quarto","path":"rooms/rm_quarto/rm_quarto.yy",},},
     {"id":{"name":"spr_battle_screen","path":"sprites/spr_battle_screen/spr_battle_screen.yy",},},
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
@@ -61,6 +63,8 @@
     {"id":{"name":"spr_talk","path":"sprites/spr_talk/spr_talk.yy",},},
     {"id":{"name":"spr_tileset","path":"sprites/spr_tileset/spr_tileset.yy",},},
     {"id":{"name":"Sprite22","path":"sprites/Sprite22/Sprite22.yy",},},
+    {"id":{"name":"Sprite23","path":"sprites/Sprite23/Sprite23.yy",},},
+    {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
