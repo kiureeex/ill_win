@@ -1,4 +1,4 @@
-var move_speed = 1;
+var move_speed = 1.3;
 var dir_x = 0;
 var dir_y = 0;
 
@@ -41,8 +41,8 @@ if (dir_x != 0 || dir_y != 0) {
         sprite_index = spr_player_walk_right;
     } else if (dir_x == -1 && sprite_index != spr_player_walk_left) {
         sprite_index = spr_player_walk_left;
-    } else if (dir_y == 1 && sprite_index != spr_player_walk_down) {
-        sprite_index = spr_player_walk_down;
+    } else if (dir_y == 1 && sprite_index != link_walk_down) {
+        sprite_index = link_walk_down;
     } else if (dir_y == -1 && sprite_index != spr_player_walk_up) {
         sprite_index = spr_player_walk_up;
     }
@@ -60,8 +60,8 @@ if (dir_x != 0 || dir_y != 0) {
             image_index = 0;
         }
     } else if (global.last_direction == "down") {
-        if (sprite_index != spr_player_idle_down) {
-            sprite_index = spr_player_idle_down;
+        if (sprite_index != link_idle_down) {
+            sprite_index = link_idle_down;
             image_index = 0;
         }
     } else if (global.last_direction == "up") {
@@ -70,4 +70,9 @@ if (dir_x != 0 || dir_y != 0) {
             image_index = 0;
         }
     }
+}
+
+if (!ja_movimentou && (keyboard_check(vk_left) || keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_down))) {
+    instance_create_depth(0, 0, -100, obj_not);
+    ja_movimentou = true;
 }
